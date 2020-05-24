@@ -3,5 +3,10 @@
     "builds": [{ "src": "app.py", "use": "@now/python" }],
     "routes": [
         { "src": "/.*", "dest": "/"}
-        ]
+        ],
+    "functions": {
+        "app.py": {
+            "excludeFiles": "**/*.*"
+        }
+    }
 }
